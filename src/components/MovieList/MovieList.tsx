@@ -1,8 +1,28 @@
-const MovieList = (): React.ReactElement => {
+import { MovieStructure } from "../../features/movies/types";
+import { useAppSelector } from "../../store/hooks";
+
+export interface MovieListProps {
+  movieList: MovieStructure[];
+}
+
+const MovieList = () => {
+  const movies = useAppSelector((state) => state.movies.movies);
+
   return (
     <div>
       <ul className="movie-list">
-        <li></li>
+        {movies.map((movies) => (
+          <li className="film" key={movies.id}>
+            <h3>{movies.title}</h3>
+            <span>{movies.year}</span>
+            <img
+              src={movies.image[0]}
+              alt={movies.title}
+              width="300"
+              height="200"
+            />
+          </li>
+        ))}
       </ul>
     </div>
   );
