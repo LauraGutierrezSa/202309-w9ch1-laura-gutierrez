@@ -1,6 +1,6 @@
 export interface MovieStructure {
   id: number;
-  title: string;
+  name: string;
   year: number;
   image: string;
 }
