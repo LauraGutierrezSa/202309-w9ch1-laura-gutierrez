@@ -16,10 +16,10 @@ const MovieList = () => {
             <h3>{movies.title}</h3>
             <span>{movies.year}</span>
             <img
-              src={movies.image[0]}
+              src={movies.image}
               alt={movies.title}
               width="300"
-              height="200"
+              height="500"
             />
           </li>
         ))}
