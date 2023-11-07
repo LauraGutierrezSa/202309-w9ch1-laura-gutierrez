@@ -1,11 +1,12 @@
-const App = (): React.ReactElement => {
-  return (
-    <div className="main-container">
-      <header>
-        <h1>Mis 10 películas favoritas</h1>
-      </header>
-    </div>
-  );
-};
+import { Navigate, Route, Routes } from "react-router-dom";
+
+const App = (): React.ReactElement => (
+  <div className="main-container">
+    <Routes>
+      <Route path="/films" />
+      <Route path="/" element={<Navigate to="/films" />} />
+    </Routes>
+  </div>
+);
 
 export default App;
