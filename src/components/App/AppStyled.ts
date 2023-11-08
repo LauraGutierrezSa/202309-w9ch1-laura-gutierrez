@@ -7,6 +7,7 @@ const AppStyled = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  background-color: #b6cdbd;
 `;
 
 export default AppStyled;
