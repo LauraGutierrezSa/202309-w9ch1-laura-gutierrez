@@ -3,6 +3,7 @@ import useMoviesApi from "../hooks/useMovieApi";
 import { loadMoviesActionCreator } from "../store/movieSlice";
 import { useEffect } from "react";
 import MovieList from "../components/MovieList/MovieList";
+import MoviesPageStyled from "./MoviesPageStyled";
 
 const MoviesPage = (): React.ReactElement => {
   const { getMovies } = useMoviesApi();
@@ -17,12 +18,12 @@ const MoviesPage = (): React.ReactElement => {
   }, [dispatch, getMovies]);
 
   return (
-    <>
+    <MoviesPageStyled>
       <header className="films__container">
         <h1 className="films__title">Mis peliculas favoritas</h1>
       </header>
       <MovieList />
-    </>
+    </MoviesPageStyled>
   );
 };
 
