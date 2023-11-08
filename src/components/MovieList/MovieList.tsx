@@ -1,5 +1,6 @@
 import { MovieStructure } from "../../features/movies/types";
 import { useAppSelector } from "../../store/hooks";
+import MovieCard from "../MovieCard/MovieCard";
 
 export interface MovieListProps {
   movieList: MovieStructure[];
@@ -13,14 +14,7 @@ const MovieList = () => {
       <ul className="movie-list">
         {movies.map((movies) => (
           <li className="film" key={movies.id}>
-            <h3>{movies.name}</h3>
-            <span>{movies.year}</span>
-            <img
-              src={movies.image}
-              alt={movies.name}
-              width="300"
-              height="500"
-            />
+            <MovieCard movie={movies} />
           </li>
         ))}
       </ul>
