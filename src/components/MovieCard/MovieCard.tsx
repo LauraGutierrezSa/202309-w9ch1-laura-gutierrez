@@ -3,6 +3,7 @@ import MovieCardStyled from "./MovieCardStyled";
 
 interface MovieCardProps {
   movie: MovieStructure;
+  id: string;
 }
 
 const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
@@ -20,6 +21,17 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
       />
       <div className="card-year">
         <span className="card-year__year">Year: {movie.year}</span>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id={""}
+          value="watched_checkbox"
+          className="checkbox"
+        />
+        <label htmlFor="checkbox" className="checkbox">
+          WATCHED
+        </label>
       </div>
     </MovieCardStyled>
   );
