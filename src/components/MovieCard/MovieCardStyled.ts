@@ -6,19 +6,19 @@ const MovieCardStyled = styled.article`
   justify-content: center;
   align-items: center;
   text-align: center;
+  align-self: center;
   padding: 20px;
   background-color: ${({ theme }) => theme.colors.dark};
   border: 6px solid ${({ theme }) => theme.colors.accent};
   border-radius: 20px;
-  width: 350px;
-  gap: 12px;
+  gap: 15px;
   .card {
     &-image {
       object-fit: cover;
       border: 5px solid black;
       border-radius: 22px;
     }
-    &-name {
+    &-title__name {
       display: flex;
       justify-content: center;
       text-transform: uppercase;
