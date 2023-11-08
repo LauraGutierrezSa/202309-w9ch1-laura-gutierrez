@@ -17,8 +17,15 @@ const moviesSlice = createSlice({
 
     toggleWatched: (
       currentState,
-      action: PayloadAction<MovieStructure[]>,
-    ): MoviesStateStructure => ({ ...currentState, movies: action.payload }),
+      action: PayloadAction<number>,
+    ): MoviesStateStructure => ({
+      ...currentState,
+      movies: currentState.movies.map((movie) => ({
+        ...movie,
+        isWatched:
+          movie.id === action.payload ? !movie.isWatched : movie.isWatched,
+      })),
+    }),
   },
 });
 
