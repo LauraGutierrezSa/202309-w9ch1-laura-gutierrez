@@ -14,6 +14,11 @@ const moviesSlice = createSlice({
       currentState,
       action: PayloadAction<MovieStructure[]>,
     ): MoviesStateStructure => ({ ...currentState, movies: action.payload }),
+
+    toggleWatched: (
+      currentState,
+      action: PayloadAction<MovieStructure[]>,
+    ): MoviesStateStructure => ({ ...currentState, movies: action.payload }),
   },
 });
 
