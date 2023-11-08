@@ -3,9 +3,9 @@ import { DefaultTheme } from "styled-components";
 const mainTheme: DefaultTheme = {
   backgroundColor: {
     main: "#f2f9f1",
-    secondary: "#bfab25",
-    third: "#b6cdbd",
-    fourth: "#5c715e",
+    accent: "#bfab25",
+    light: "#b6cdbd",
+    dark: "#5c715e",
   },
   typography: {
     fontFamily: "'Verdana', 'sans-serif'",
@@ -14,9 +14,9 @@ const mainTheme: DefaultTheme = {
   borderRadius: "20px",
   colors: {
     main: "#f2f9f1",
-    secondary: "#bfab25",
-    third: "#b6cdbd",
-    fourth: "#5c715e",
+    accent: "#bfab25",
+    light: "#b6cdbd",
+    dark: "#5c715e",
   },
 };
 

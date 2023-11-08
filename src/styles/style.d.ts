@@ -6,9 +6,9 @@ declare module "styled-components" {
 
     colors: {
       main: string;
-      secondary: string;
-      third: string;
-      fourth: string;
+      accent: string;
+      light: string;
+      dark: string;
     };
   }
 }
