@@ -36,17 +36,19 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
         <span className="card-year__year">Year: {movie.year}</span>
       </div>
       <div>
-        <input
-          type="checkbox"
-          id={""}
-          value="watched_checkbox"
-          className="checkbox"
-          checked={movie.isWatched}
-          onChange={changeWatchStatus}
-        />
-        <label htmlFor="checkbox" className="checkbox">
+        <label htmlFor="watched" className="checkbox">
           WATCHED
+          <input
+            type="checkbox"
+            value="watched_checkbox"
+            className="checkbox"
+            checked={movie.isWatched}
+            onChange={changeWatchStatus}
+          />
         </label>
+        <span className="card__watchedMessage">
+          {movie.isWatched ? "Not watched" : "Watched"}
+        </span>
       </div>
     </MovieCardStyled>
   );
