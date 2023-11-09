@@ -1,5 +1,9 @@
+import { useCallback } from "react";
 import { MovieStructure } from "../../features/movies/types";
 import MovieCardStyled from "./MovieCardStyled";
+import { toggleWatchedActionCreator } from "../../store/movieSlice";
+import { useDispatch } from "react-redux";
+import useMovieApi from "../../hooks/useMovieApi";
 
 interface MovieCardProps {
   movie: MovieStructure;
@@ -7,6 +11,15 @@ interface MovieCardProps {
 }
 
 const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
+  const dispatch = useDispatch();
+
+  const { setWatchStatus } = useMovieApi();
+
+  const changeWatchStatus = useCallback(() => {
+    setWatchStatus(movie.id, movie.isWatched);
+    dispatch(toggleWatchedActionCreator(movie.id));
+  }, [dispatch, movie.id, movie.isWatched, setWatchStatus]);
+
   return (
     <MovieCardStyled>
       <div className="card-title">
@@ -28,6 +41,8 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
           id={""}
           value="watched_checkbox"
           className="checkbox"
+          checked={movie.isWatched}
+          onChange={changeWatchStatus}
         />
         <label htmlFor="checkbox" className="checkbox">
           WATCHED
