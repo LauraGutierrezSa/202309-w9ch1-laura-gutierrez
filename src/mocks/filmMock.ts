@@ -6,4 +6,5 @@ export const filmMock: MovieStructure = {
   year: 1987,
   image:
     "https://raw.githubusercontent.com/LauraGutierrezSa/202309-w9ch1-laura-custom-api/main/images/the-lost-boys.webp",
+  isWatched: false,
 };
