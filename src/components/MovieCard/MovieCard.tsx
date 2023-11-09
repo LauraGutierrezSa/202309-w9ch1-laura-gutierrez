@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { MovieStructure } from "../../features/movies/types";
 import MovieCardStyled from "./MovieCardStyled";
-import { toggleWatchedActionCreator } from "../../store/movieSlice";
+import { toggleWatchedActionCreator } from "../../features/movies/movieSlice";
 import { useDispatch } from "react-redux";
 import useMovieApi from "../../hooks/useMovieApi";
 
@@ -21,7 +21,7 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
   }, [dispatch, movie.id, movie.isWatched, setWatchStatus]);
 
   return (
-    <MovieCardStyled>
+    <MovieCardStyled className="card">
       <div className="card-title">
         <h2 className="card-title__name">{movie.name}</h2>
       </div>

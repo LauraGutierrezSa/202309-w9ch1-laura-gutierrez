@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import useMoviesApi from "../hooks/useMovieApi";
-import { loadMoviesActionCreator } from "../store/movieSlice";
+import { loadMoviesActionCreator } from "../features/movies/movieSlice";
 import { useEffect } from "react";
 import MovieList from "../components/MovieList/MovieList";
 import MoviesPageStyled from "./MoviesPageStyled";
