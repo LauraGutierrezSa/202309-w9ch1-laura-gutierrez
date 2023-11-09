@@ -13,7 +13,7 @@ describe("Given a MovieCard component", () => {
       render(
         <ThemeProvider theme={mainTheme}>
           <BrowserRouter>
-            <MovieCard movie={movieMock} />
+            <MovieCard movie={movieMock} id={""} />
           </BrowserRouter>
         </ThemeProvider>,
       );

@@ -31,6 +31,14 @@ const MovieCardStyled = styled.article`
       padding: 5px;
       margin: 0;
     }
+    &-checkbox {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin: 0;
+      width: 30px;
+      height: 30px;
+    }
   }
   @media (max-width: 362px) {
     width: 315px;
