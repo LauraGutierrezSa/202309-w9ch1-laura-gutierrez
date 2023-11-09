@@ -39,6 +39,13 @@ const MovieCardStyled = styled.article`
       width: 30px;
       height: 30px;
     }
+    &__watchedMessage {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin: 0;
+      color: ${({ theme }) => theme.colors.main};
+    }
   }
   @media (max-width: 362px) {
     width: 315px;
