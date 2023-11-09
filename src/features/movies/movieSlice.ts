@@ -1,12 +1,11 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { MovieStructure } from "../features/movies/types";
-import { MoviesStateStructure } from "../features/movies/types";
+import { MovieStructure, MoviesStateStructure } from "./types";
 
 const initialMoviesState: MoviesStateStructure = {
   movies: [],
 };
 
-const moviesSlice = createSlice({
+export const moviesSlice = createSlice({
   name: "movies",
   initialState: initialMoviesState,
   reducers: {
@@ -14,7 +13,6 @@ const moviesSlice = createSlice({
       currentState,
       action: PayloadAction<MovieStructure[]>,
     ): MoviesStateStructure => ({ ...currentState, movies: action.payload }),
-
     toggleWatched: (
       currentState,
       action: PayloadAction<number>,
