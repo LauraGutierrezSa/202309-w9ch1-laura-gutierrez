@@ -7,6 +7,7 @@ export const filmsMock: MovieStructure[] = [
     year: 1987,
     image:
       "https://raw.githubusercontent.com/LauraGutierrezSa/202309-w9ch1-laura-custom-api/main/images/the-lost-boys.webp",
+    isWatched: false,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const filmsMock: MovieStructure[] = [
     year: 2002,
     image:
       "https://raw.githubusercontent.com/LauraGutierrezSa/202309-w9ch1-laura-custom-api/main/images/el-pianista.webp",
+    isWatched: false,
   },
   {
     id: 3,
@@ -21,5 +23,6 @@ export const filmsMock: MovieStructure[] = [
     year: 2004,
     image:
       "https://raw.githubusercontent.com/LauraGutierrezSa/202309-w9ch1-laura-custom-api/main/images/the-village.webp",
+    isWatched: true,
   },
 ];
