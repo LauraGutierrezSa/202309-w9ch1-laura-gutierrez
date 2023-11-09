@@ -1,7 +1,7 @@
 import { NavLink, Navigate, Route, Routes } from "react-router-dom";
-import MoviesPage from "../../pages/MoviesPage";
+import MoviesPage from "../../pages/MoviesPage/MoviesPage";
 import AppStyled from "./AppStyled";
-import NewMoviePage from "../../pages/NewMoviePage";
+import NewMoviePage from "../../pages/NewMoviePage/NewMoviePage";
 
 const App = (): React.ReactElement => (
   <AppStyled className="container">
