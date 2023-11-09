@@ -29,6 +29,9 @@ const moviesSlice = createSlice({
   },
 });
 
-export const { loadMovies: loadMoviesActionCreator } = moviesSlice.actions;
+export const {
+  loadMovies: loadMoviesActionCreator,
+  toggleWatched: toggleWatchedActionCreator,
+} = moviesSlice.actions;
 
 export const movieReducer = moviesSlice.reducer;
