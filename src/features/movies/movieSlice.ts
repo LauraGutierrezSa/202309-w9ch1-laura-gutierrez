@@ -24,12 +24,17 @@ export const moviesSlice = createSlice({
           movie.id === action.payload ? !movie.isWatched : movie.isWatched,
       })),
     }),
+    addMovie: (currentState, action: PayloadAction<MovieStructure>) => ({
+      ...currentState,
+      movies: [...currentState.movies, action.payload],
+    }),
   },
 });
 
 export const {
   loadMovies: loadMoviesActionCreator,
   toggleWatched: toggleWatchedActionCreator,
+  addMovie: addMovieActionCreator,
 } = moviesSlice.actions;
 
 export const movieReducer = moviesSlice.reducer;
