@@ -37,7 +37,7 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
       </div>
       <div>
         <label htmlFor="checkbox" className="checkbox">
-          Have you watched this movie?:
+          ¿Has visto esta película?:
           <input
             type="checkbox"
             value="watched_checkbox"
@@ -47,7 +47,7 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
           />
         </label>
         <span className="card__watchedMessage">
-          {movie.isWatched ? "Watched" : "Not watched"}
+          {movie.isWatched ? "Vista" : "No vista"}
         </span>
       </div>
     </MovieCardStyled>
