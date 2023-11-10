@@ -1,18 +1,12 @@
-import { NavLink, Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import MoviesPage from "../../pages/MoviesPage/MoviesPage";
 import AppStyled from "./AppStyled";
 import NewMoviePage from "../../pages/NewMoviePage/NewMoviePage";
+import Navigation from "../Navigation/Navigation";
 
 const App = (): React.ReactElement => (
   <AppStyled className="container">
-    <nav className="container-navigation-bar">
-      <NavLink to="/films">
-        <span className="navigation-bar__home">Página principal</span>
-      </NavLink>
-      <NavLink to="/add-movie">
-        <span className="navigation-bar__add-movie">Añade película</span>
-      </NavLink>
-    </nav>
+    <Navigation />
     <main className="main-container">
       <Routes>
         <Route path="/films" element={<MoviesPage />} />
