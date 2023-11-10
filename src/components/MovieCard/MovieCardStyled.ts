@@ -13,6 +13,8 @@ const MovieCardStyled = styled.article`
   border-radius: 20px;
   gap: 15px;
   .card {
+    height: auto;
+
     &-image {
       object-fit: cover;
       border: 5px solid black;
@@ -34,15 +36,15 @@ const MovieCardStyled = styled.article`
     &-checkbox {
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 5px;
       margin: 0;
-      width: 30px;
-      height: 30px;
+      width: 300px;
+      height: 50px;
     }
     &__watchedMessage {
-      display: flex;
-      justify-content: center;
-      padding: 5px;
+      accent-color: ${({ theme }) => theme.colors.accent};
+      padding: 10px;
       margin: 0;
       color: ${({ theme }) => theme.colors.main};
     }
