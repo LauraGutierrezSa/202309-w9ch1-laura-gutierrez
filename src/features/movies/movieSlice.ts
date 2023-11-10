@@ -26,11 +26,7 @@ export const moviesSlice = createSlice({
     }),
     addMovie: (currentState, action: PayloadAction<MovieStructure>) => ({
       ...currentState,
-      addMovie: currentState.movies.splice(
-        currentState.movies.length - 1,
-        0,
-        action.payload,
-      ),
+      movies: [...currentState.movies, action.payload],
     }),
   },
 });
