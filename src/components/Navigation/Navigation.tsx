@@ -5,10 +5,14 @@ const Navigation = () => {
   return (
     <NavigationStyled className="container-navigation-bar">
       <NavLink to="/films">
-        <span className="navigation-bar__home">Página principal</span>
+        <ul>
+          <li className="navigation-bar__home">Página principal</li>
+        </ul>
       </NavLink>
       <NavLink to="/add-movie">
-        <span className="navigation-bar__add-movie">Añade película</span>
+        <ul>
+          <li className="navigation-bar__add-movie">Añade película</li>
+        </ul>
       </NavLink>
     </NavigationStyled>
   );

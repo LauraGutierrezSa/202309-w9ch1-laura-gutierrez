@@ -13,7 +13,7 @@ const MoviesPageStyled = styled.div`
     &__title {
       padding: 20px 20px 20px 20px;
       color: ${({ theme }) => theme.colors.main};
-      font-size: 3rem;
+      font-size: 2.5rem;
       text-align: center;
     }
   }

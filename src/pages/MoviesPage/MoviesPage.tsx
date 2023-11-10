@@ -20,7 +20,7 @@ const MoviesPage = (): React.ReactElement => {
   return (
     <MoviesPageStyled>
       <header className="films__container">
-        <h1 className="films__title">Mis peliculas favoritas</h1>
+        <h1 className="films__title">Mis películas favoritas</h1>
       </header>
       <MovieList />
     </MoviesPageStyled>
