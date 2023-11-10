@@ -33,7 +33,7 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
         height="500"
       />
       <div className="card-year">
-        <span className="card-year__year">Year: {movie.year}</span>
+        <span className="card-year__year">Año: {movie.year}</span>
       </div>
       <div>
         <label htmlFor="checkbox" className="checkbox">
