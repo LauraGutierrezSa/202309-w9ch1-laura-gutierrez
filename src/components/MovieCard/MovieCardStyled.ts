@@ -45,7 +45,9 @@ const MovieCardStyled = styled.article`
     }
     &__watchedMessage {
       accent-color: ${({ theme }) => theme.colors.accent};
-      padding-right: 50px;
+      padding-right: 5px;
+      border-style: dotted;
+      border-color: ${({ theme }) => theme.colors.accent};
       margin: 0;
       color: ${({ theme }) => theme.colors.main};
       font-size: 1.6rem;
