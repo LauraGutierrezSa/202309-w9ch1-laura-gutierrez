@@ -6,7 +6,6 @@ const NewMoviePageStyled = styled.section`
   align-items: center;
   gap: 40px;
   .form-title {
-    font-size: ${({ theme }) => theme.tipography.size};
     text-align: center;
   }
 `;
