@@ -23,6 +23,11 @@ body {
   color: ${({ theme }) => theme.typography.fontColor};
   background-color: ${({ theme }) => theme.backgroundColor.main};
 }
+
+input {
+  font: inherit;
+  display: inline-block;
+}
 `;
 
 export default GlobalStyle;

@@ -4,19 +4,31 @@ import Button from "../Button/Button";
 
 const Form = () => {
   return (
-    <MovieFormStyled className="form">
-      <label className="form__label" htmlFor="name">
-        Título: <input type="text" className="form__input" id="name" />
-      </label>
-      <label className="form__label" htmlFor="year">
-        Año: <input type="text" className="form__input" id="year" />
-      </label>
-      <label className="form__label" htmlFor="imageUrl">
-        Imagen Url: <input type="url" className="form__input" id="imageUrl" />
-      </label>
-      <label className="form__label" htmlFor="hasBeenSeeen">
-        ¿Has visto esta película? <input type="checkbox" />
-      </label>
+    <MovieFormStyled>
+      <div className="form">
+        <label className="form__label" htmlFor="name">
+          Título:
+        </label>
+        <input type="text" className="form__input" id="name" />
+      </div>
+      <div className="form">
+        <label className="form__label" htmlFor="year">
+          Año:
+        </label>
+        <input type="text" className="form__input" id="year" />
+      </div>
+      <div className="form">
+        <label className="form__label" htmlFor="imageUrl">
+          Imagen Url:
+        </label>
+        <input type="url" className="form__input" id="imageUrl" />
+      </div>
+      <div className="form-checkbox">
+        <label className="form__label" htmlFor="hasBeenSeeen">
+          ¿Has visto esta película?
+        </label>
+        <input type="checkbox" className="form__checkbox" />
+      </div>
       <Button type={"submit"} text={"Añade nueva película"} />
       <Link className="link" to="/films">
         Página principal

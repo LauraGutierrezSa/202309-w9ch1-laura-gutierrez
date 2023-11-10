@@ -6,20 +6,29 @@ const NavigationStyled = styled.nav`
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    font-size: 16px;
     color: ${({ theme }) => theme.colors.accent};
+    background-color: ${({ theme }) => theme.colors.dark};
     text-transform: uppercase;
     padding: 10px;
+    display: inline-block;
 
     &-bar__home {
-      color: ${({ theme }) => theme.colors.accent};
+      background-color: ${({ theme }) => theme.colors.accent};
+      color: ${({ theme }) => theme.colors.dark};
+      font-weight: bold;
+      font-size: 14px;
       text-decoration: underline overline ${({ theme }) => theme.colors.light};
       border-style: double;
+      border-width: thick;
     }
     &-bar__add-movie {
-      color: ${({ theme }) => theme.colors.accent};
+      background-color: ${({ theme }) => theme.colors.accent};
+      color: ${({ theme }) => theme.colors.dark};
+      font-weight: bold;
+      font-size: 14px;
       text-decoration: underline overline ${({ theme }) => theme.colors.light};
       border-style: double;
+      border-width: thick;
     }
   }
 
