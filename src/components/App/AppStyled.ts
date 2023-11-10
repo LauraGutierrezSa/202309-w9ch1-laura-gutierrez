@@ -8,6 +8,18 @@ const AppStyled = styled.div`
   align-items: center;
   padding: 10px;
   background-color: #b6cdbd;
+
+  .container {
+    &-navigation-bar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 18px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 30px;
+    }
+  }
 `;
 
 export default AppStyled;

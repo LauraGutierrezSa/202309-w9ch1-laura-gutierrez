@@ -6,6 +6,13 @@ export interface MovieStructure {
   isWatched: boolean;
 }
 
+export interface FilmsStructureWithoutId {
+  title: string;
+  year: string;
+  image: string;
+  isWatched: boolean;
+}
+
 export interface MoviesStateStructure {
   movies: MovieStructure[];
 }

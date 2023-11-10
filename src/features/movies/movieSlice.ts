@@ -24,12 +24,21 @@ export const moviesSlice = createSlice({
           movie.id === action.payload ? !movie.isWatched : movie.isWatched,
       })),
     }),
+    addMovie: (currentState, action: PayloadAction<MovieStructure>) => ({
+      ...currentState,
+      addMovie: currentState.movies.splice(
+        currentState.movies.length - 1,
+        0,
+        action.payload,
+      ),
+    }),
   },
 });
 
 export const {
   loadMovies: loadMoviesActionCreator,
   toggleWatched: toggleWatchedActionCreator,
+  addMovie: addMovieActionCreator,
 } = moviesSlice.actions;
 
 export const movieReducer = moviesSlice.reducer;
