@@ -35,8 +35,8 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
       <div className="card-year">
         <span className="card-year__year">Año: {movie.year}</span>
       </div>
-      <div>
-        <label htmlFor="checkbox" className="checkbox">
+      <div className="card-checkbox">
+        <label htmlFor="checkbox" className="checkbox-label">
           ¿Has visto esta película?:
           <input
             type="checkbox"

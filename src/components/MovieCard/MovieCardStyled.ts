@@ -13,6 +13,8 @@ const MovieCardStyled = styled.article`
   border-radius: 20px;
   gap: 15px;
   .card {
+    height: auto;
+
     &-image {
       object-fit: cover;
       border: 5px solid black;
@@ -30,21 +32,23 @@ const MovieCardStyled = styled.article`
       justify-content: center;
       padding: 5px;
       margin: 0;
+      padding: 15px;
     }
     &-checkbox {
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 5px;
       margin: 0;
-      width: 30px;
-      height: 30px;
+      width: 300px;
+      height: 50px;
     }
     &__watchedMessage {
-      display: flex;
-      justify-content: center;
-      padding: 5px;
+      accent-color: ${({ theme }) => theme.colors.accent};
+      padding-right: 50px;
       margin: 0;
       color: ${({ theme }) => theme.colors.main};
+      font-size: 1.6rem;
     }
   }
   @media (max-width: 362px) {
