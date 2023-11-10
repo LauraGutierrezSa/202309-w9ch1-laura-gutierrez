@@ -37,7 +37,7 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
       </div>
       <div>
         <label htmlFor="watched" className="checkbox">
-          Mark as:
+          Have your watched it?:
           <input
             type="checkbox"
             value="watched_checkbox"
