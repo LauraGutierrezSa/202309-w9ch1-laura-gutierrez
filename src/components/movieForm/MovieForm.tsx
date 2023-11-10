@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import MovieFormStyled from "./MovieFormStyled";
+import Button from "../Button/Button";
 
 const Form = () => {
   return (
@@ -15,6 +17,10 @@ const Form = () => {
       <label className="form__label" htmlFor="hasBeenSeeen">
         ¿Has visto esta película? <input type="checkbox" />
       </label>
+      <Button type={"submit"} text={"Añade nueva película"} />
+      <Link className="link" to="/films">
+        Página principal
+      </Link>
     </MovieFormStyled>
   );
 };
