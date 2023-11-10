@@ -19,11 +19,11 @@ describe("Given a Navigation component", () => {
         </Provider>,
       );
 
-      const pagePrincipalElement = screen.getByText("Página principal");
-      const anadePeliculaElement = screen.getByText("Añade película");
+      const homepageElement = screen.getByText("Página principal");
+      const addMovieElement = screen.getByText("Añade película");
 
-      expect(pagePrincipalElement).toBeInTheDocument();
-      expect(anadePeliculaElement).toBeInTheDocument();
+      expect(homepageElement).toBeInTheDocument();
+      expect(addMovieElement).toBeInTheDocument();
     });
   });
 });
