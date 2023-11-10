@@ -33,11 +33,14 @@ const MovieCard = ({ movie }: MovieCardProps): React.ReactElement => {
         height="500"
       />
       <div className="card-year">
-        <span className="card-year__year">Año: {movie.year}</span>
+        <span className="card-year__year">
+          Año:{""}
+          {movie.year}
+        </span>
       </div>
       <div className="card-checkbox">
         <label htmlFor="checkbox" className="checkbox-label">
-          ¿Has visto esta película?:
+          ¿Has visto esta película?:{" "}
           <input
             type="checkbox"
             value="watched_checkbox"
