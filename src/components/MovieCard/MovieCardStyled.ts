@@ -32,6 +32,7 @@ const MovieCardStyled = styled.article`
       justify-content: center;
       padding: 5px;
       margin: 0;
+      padding: 15px;
     }
     &-checkbox {
       display: flex;
@@ -44,9 +45,10 @@ const MovieCardStyled = styled.article`
     }
     &__watchedMessage {
       accent-color: ${({ theme }) => theme.colors.accent};
-      padding: 10px;
+      padding-right: 50px;
       margin: 0;
       color: ${({ theme }) => theme.colors.main};
+      font-size: 1.6rem;
     }
   }
   @media (max-width: 362px) {
